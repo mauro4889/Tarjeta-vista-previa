@@ -111,6 +111,15 @@ body{
 
 /* Inicio Media Query*/
 
+@media (min-width: 319px) and (orientation: landscape){
+    body{
+        height: 50em;
+    }
+    .contenedor-tarjeta{
+        width: 50%;
+    }
+}
+
 @media (min-width: 767px){
     .contenedor-tarjeta{
         width: 50%;
