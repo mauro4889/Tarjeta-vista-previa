@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@500;600;700&family=Flamenco&family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@500;600;700&family=Flamenco&family=Lexend+Deca&display=swap');
+
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: hsl(233, 47%, 7%);
+    min-width: 100vw;
+    height: 100vh;
+    font-family: 'Advent Pro', sans-serif;
+}
+.contenedor-tarjeta{
+    background-color: hsl(244, 38%, 16%);
+    width: 90%;
+    height: 90%;
+    margin: 10% auto;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.contenedor-imagen{
+    width: 100%;
+    height: 35%;
+    overflow: hidden;
+}
+.imagen{
+    background-image: url(./images/image-header-mobile.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: relative;
+}
+.capa{
+    background: hsl(277, 96%, 27%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+.contendor-info{
+    width: 100%;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 5%;
+}
+.intro{
+    margin: 0 auto;
+    width: 90%;
+    height: 30%;
+    height: 10em;
+    display: flex;
+    flex-wrap: wrap;
+}
+.intro h2{
+    width: 100%;
+    height:60%;
+    text-align: center;
+    color: white;
+    font-family: 'Inter';
+    margin: 5% auto;
+    margin-bottom: 0;
+}
+.intro h2 b{
+    color: hsl(277, 64%, 61%);
+}
+.intro p{
+    margin-top: 0;
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    color: hsla(0, 0%, 100%, 0.6);
+    line-height: 1.5;
+    font-family: 'Lexend Deca';
+    font-size: 90%;
+}
+.datos{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 70%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 10%;
+}
+.contador{
+    width: 100%;
+    height: 20%;
+    margin: 2%;
+}
+.contador h3{
+    margin: 0;
+    margin-bottom: 2%;
+    color: white;
+    font-family: 'Lexend Deca';
+    font-size: 120%;
+}
+.contador p{
+    height: %;
+    margin: 0;
+    font-family: 'Lexend Deca';
+    font-size: 70%;
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+
+/* Inicio Media Query*/
+
+@media (min-width: 767px){
+    .contenedor-tarjeta{
+        width: 50%;
+        margin-top: 5%;
+    }
+}
+
+@media (min-width: 1023px){
+    .contenedor-tarjeta{
+        width: 85%;
+        height: 45%;
+        margin: 20% auto;
+        flex-direction: row-reverse;
+        border-radius: 10px;
+    }
+    .contenedor-imagen , .contendor-info{
+        width: 50%;
+        height: 100%;
+    }
+    .contendor-info{
+        margin: 0;
+    }
+    .intro{
+        width: 70%;
+        margin-top: 10%;
+    }
+    .intro h2{
+        text-align:left;
+    }
+    .intro p{
+        text-align: left;
+        margin: 0;
+        width: 90%;
+        font-size: 70%;
+    }
+    .datos{
+        flex-direction: row;
+        width: 70%;
+        justify-content: space-between;
+        margin: 0;
+    }
+    .contador{
+        margin: 0;
+        width: 25%;
+    }
+    .contador h3{
+        text-align: left;
+        font-weight: 500;
+    }
+    .contador p{
+        text-align: left;
+        font-size: 60%;
+    }
+}
